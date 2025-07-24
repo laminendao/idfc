@@ -1,10 +1,15 @@
 import numpy as np
 import pandas as pd
 
-def compute_covariance_score(x, c):
+def compute_cov(x, c):
     """
-    Renvoie la covariance au carré entre une variable x et une composante c.
+    Renvoie la covariance entre une variable x et une composante c.
     """
+    return np.cov(x, c)[0, 1]
+
+
+def compute_cov2(x, c):
+    """Covariance au carré entre une variable x et un vecteur c."""
     return np.cov(x, c)[0, 1] ** 2
 
 def compute_variable_correlations(X, clusters, components):

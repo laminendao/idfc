@@ -1,3 +1,5 @@
+[![GitHub Repo](https://img.shields.io/badge/GitHub-IDFC-blue?logo=github)](https://github.com/laminendao/idfc)
+
 # 🧠 Interpretable Divisive Feature Clustering (IDFC)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
