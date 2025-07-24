@@ -1,0 +1,24 @@
+
+---
+
+## 📄 2. `CITATION.cff` (compatible avec GitHub's citation tool)
+
+```yaml
+cff-version: 1.2.0
+message: "If you use this software, please cite the following paper:"
+authors:
+  - family-names: Ndao
+    given-names: Mouhamadou Lamine
+  - family-names: Youness
+    given-names: Genane
+  - family-names: Niang
+    given-names: Ndeye
+  - family-names: Saporta
+    given-names: Gilbert
+title: "Explainable Remaining Useful Life Prediction Using an Interpretable Divisive Feature Clustering"
+version: 0.1.0
+date-released: 2024-07-01
+repository-code: https://github.com/username/idfc
+url: https://github.com/username/idfc
+doi: "10.xxxx/xxxxxx"  # Remplacer par le DOI final une fois publié
+license: MIT

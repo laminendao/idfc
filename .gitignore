@@ -1,0 +1,30 @@
+# Python standard
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.pyo
+*.pyd
+*.pkl
+*.db
+*.log
+
+# Environnements virtuels
+env/
+venv/
+.venv/
+
+# Jupyter & notebooks
+.ipynb_checkpoints/
+notebooks/*.ipynb
+notebooks/.ipynb_checkpoints/
+
+# Données temporaires
+data/*.csv
+data/*.xlsx
+*.tmp
+
+# Configs perso
+*.DS_Store
+.idea/
+.vscode/
+*.swp
