@@ -5,7 +5,7 @@ from varclushi import VarClusHi
 
 
 class IDFC:
-    def __init__(self, rho=0.3, maxeigval2=1.0, max_iter=100, tol=1e-5, verbose=False):
+    def __init__(self, rho=0.3, maxeigval2=1.0, max_iter=10, tol=1e-5, verbose=False):
         self.rho = rho
         self.maxeigval2 = maxeigval2
         self.max_iter = max_iter
@@ -32,6 +32,8 @@ class IDFC:
             print(key, clus)
             if len(clus) != 0:
                 partition[key] = p_names[clus]
+        print(partition)
+        # à rajouter, le regorupement des k+1 cluster
         return partition
 
     def _refine_partition(self, X, init_partition):
@@ -76,6 +78,7 @@ class IDFC:
                     break
             prev_assignments = current_assignments
             clusters = new_clusters
+            # Verifier si l'affectation est correct
 
         # Final : recalcul des composantes
         final_components = {}
@@ -114,6 +117,7 @@ class IDFC:
         2. Raffinement (CLV k+1)
         3. Sélection des variables interprétables
         """
+        # if normalize:
         X = (X - X.mean()) / X.std()
         
         if self.verbose:

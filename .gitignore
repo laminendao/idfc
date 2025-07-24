@@ -31,4 +31,5 @@ data/*.xlsx
 
 # Perso
 idfc/
+sp_modif/
 test.ipynb
